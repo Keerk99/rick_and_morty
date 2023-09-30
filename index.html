@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty</title>
+    <link rel="stylesheet" href="resources/css/reset.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navBar">
+            <a href="#">
+                <img class="logo" src="/resources/img/Rick_and_Morty_logo.png" alt="Logo Rick and Morty">
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="banner">
+                <input type="text" id="txt__character" class="search__character" placeholder="Search a character">
+            </div>
+        </section>
+        <section>
+            <div class="div__cards">
+                <div class="cards__container" id="cards__container">
+                    <ul class="cards__list" id="cards__list"></ul>
+                    <div id="no__data" class="no__data">
+                        <h2 class="no__data-title">Character not found</h2>
+                        <img src="resources/img/no__results.png" alt="No results" class="no__data-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer">
+            <div class="container__footer">
+                <p class="footer__copyright">© Copyright Developed by Antony Huaman 2023</p>
+            </div>
+        </section>
+    </footer>
+
+    <script type="module" src="controller/user-controller.js"></script>
+</body>
+
+</html>
